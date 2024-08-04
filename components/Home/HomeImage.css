@@ -1,0 +1,7 @@
+.home-image {
+    background-image: url('../../public/img/home/header.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+}

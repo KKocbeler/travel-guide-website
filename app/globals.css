@@ -12,7 +12,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  height: 200rem;
 }
 
 :root {
@@ -22,7 +23,8 @@ body {
   --green-color: #527853;
   --light-color: #F7F9F2;
   --dark-color: #191919;
-  --shadow-first: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  --gray-color: #45474B;
+  --shadow-first: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   --shadow-second: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
@@ -36,9 +38,15 @@ li {
   list-style-type: none;
 }
 
+svg {
+  width: 1.2rem;
+}
+
 .container {
   padding: 0 15%;
 }
+
+/* SCROLLBAR */
 
 /* RESPONSIVE */
 

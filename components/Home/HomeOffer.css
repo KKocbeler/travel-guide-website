@@ -1,0 +1,58 @@
+.home-offer {
+    margin-top: 4rem;
+}
+
+.home-offer h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.home-offer > p {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.offer-card {
+    position: relative;
+    background: 
+        linear-gradient(to bottom, rgba(25, 25, 25, 0.2), rgba(25, 25, 25, 0.3)),
+        url('/img/home/offer-img.jpeg')
+    ;
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 19vh;
+    border-radius: 1rem;
+    color: var(--light-color);
+    box-shadow: var(--shadow-second);
+}
+
+.home-offer .card-body {
+    position: absolute;
+    top: 50%;
+    left: 4rem;
+    transform: translateY(-55%);
+}
+
+.offer-card h4 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.offer-card p {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+}
+
+.offer-card a {
+    padding: 1rem 2rem;
+    background-color: var(--light-color);
+    border-radius: .5rem;
+    box-shadow: var(--shadow-first);
+    transition: all .2s;
+}
+
+.offer-card a:hover {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
