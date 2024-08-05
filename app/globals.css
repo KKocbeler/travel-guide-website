@@ -72,7 +72,7 @@ svg {
 
 @media (max-width: 767px) {
   html {
-    font-size: 43.75%;
+    font-size: 45%;
   } 
 
   .container {
@@ -82,7 +82,7 @@ svg {
 
 @media (max-width: 575px) {
   html {
-    font-size: 62.5%
+    font-size: 43%
   }
 
   .container {
