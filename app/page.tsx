@@ -4,6 +4,7 @@ import HomeCities from "@/components/Home/HomeCities";
 import HomeOffer from "@/components/Home/HomeOffer";
 import HomeFeatures from "@/components/Home/HomeFeatures";
 import HomePopular from "@/components/Home/HomePopular";
+import HomeGalleryCard from "@/components/Home/HomeGalleryCard";
 
 export default function Home() {
     return (
@@ -13,6 +14,7 @@ export default function Home() {
             <HomeOffer />
             <HomeFeatures />
             <HomePopular />
+            <HomeGalleryCard />
         </main>
     );
 }
