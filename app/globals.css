@@ -17,10 +17,10 @@ body {
 }
 
 :root {
-  --primary-color: #EE7214;
-  --secondary-color: #F7B787;
-  --third-color: #F9E8D9;
-  --green-color: #527853;
+  --primary-color: #222831;
+  --secondary-color: #393E46;
+  --third-color: #EEEEEE;
+  --green-color: #FFD369;
   --light-color: #F7F9F2;
   --dark-color: #191919;
   --gray-color: #45474B;
