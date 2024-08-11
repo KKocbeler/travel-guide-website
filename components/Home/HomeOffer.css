@@ -3,12 +3,12 @@
 }
 
 .home-offer h3 {
-    font-size: 2rem;
+    font-size: var(--font-xl);
     margin-bottom: 1rem;
 }
 
 .home-offer > p {
-    font-size: 1.8rem;
+    font-size: var(--font-xl);
     margin-bottom: 1rem;
 }
 
@@ -21,7 +21,7 @@
     background-position: top;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 19vh;
+    height: 12vh;
     border-radius: 1rem;
     color: var(--light-color);
     box-shadow: var(--shadow-second);
@@ -35,17 +35,17 @@
 }
 
 .offer-card h4 {
-    font-size: 2.4rem;
+    font-size:  var(--font-xxl);
     margin-bottom: 1rem;
 }
 
 .offer-card p {
-    font-size: 1.8rem;
+    font-size: var(--font-lg);
     margin-bottom: 3rem;
 }
 
 .offer-card a {
-    padding: 1rem 2rem;
+    padding: 1.2rem 2rem;
     background-color: var(--light-color);
     border-radius: .5rem;
     box-shadow: var(--shadow-first);
@@ -55,4 +55,10 @@
 .offer-card a:hover {
     background-color: var(--primary-color);
     color: var(--light-color);
+}
+
+@media (min-width: 768px) {
+    .offer-card {
+        height: 19vh;
+    }
 }

@@ -11,7 +11,7 @@
 }
 
 .home-cities h3 {
-    font-size: 2rem;
+    font-size: var(--font-xl);
 }
 
 .home-cities .slider-button {
@@ -35,7 +35,7 @@
   
 .home-cities .card {
     position: relative;
-    min-width: calc(20% - 1.6rem);
+    min-width: calc(25% - 1.6rem);
     overflow: hidden;
     border-radius: .5rem;
     box-shadow: var(--shadow-first);
@@ -61,7 +61,13 @@
     left: .0rem;
     padding: 5rem 0 1rem 1rem;
     background: var(--light-color);
-    background: linear-gradient(0deg, rgb(34, 40, 49) 5%, transparent 100%);
-    font-size: 1.8rem;
+    background: linear-gradient(0deg, rgb(71, 76, 83) 5%, transparent 100%);
+    font-size: var(--font-lg);
     color: var(--light-color);
+}
+
+@media (min-width: 768px) {
+    .home-cities .card {
+        min-width: calc(20% - 1.6rem);
+    }
 }
