@@ -1,6 +1,7 @@
 footer {
-    margin-top: 7rem;
+    margin-top: auto;
     background-color: var(--third-color);
+
 }
 
 .footer-main {

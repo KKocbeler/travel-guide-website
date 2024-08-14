@@ -5,12 +5,12 @@ import '@/components/Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
-import { faFacebook, faFacebookF, faInstagram, faLinkedin, faTwitter, faXTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faInstagram, faLinkedin, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
     interface fList {
         title: string,
-        list: string[]
+        list: string[],
     }
 
     const footerList: fList[] = [

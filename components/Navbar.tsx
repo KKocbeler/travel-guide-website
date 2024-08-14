@@ -14,7 +14,7 @@ const Navbar = () => {
                 <ul className="nav-menu-list">
                     <li><Link href={'/'}>Home</Link></li>
                     <li><Link href={'/'}>Cities</Link></li>
-                    <li><Link href={'/'}>Contact</Link></li>
+                    <li><Link href={'/contact'}>Contact</Link></li>
                     <li><Link href={'/'}>About</Link></li>
                     <li><Link className='login-button' href={'/login'}><FontAwesomeIcon icon={faUser}/> Login</Link></li>
                 </ul>

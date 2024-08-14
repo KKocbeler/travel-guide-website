@@ -3,7 +3,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 3rem 4rem;
-    background-color: var(--light-color);
+    background-color: var(--third-color);
     box-shadow: var(--shadow-first);
 }
 
