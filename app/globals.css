@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Raleway", sans-serif;
 }
 
 html {
@@ -19,17 +23,23 @@ body {
   --primary-color: #222831;
   --secondary-color: #393E46;
   --third-color: #EEEEEE;
-  --green-color: #FFD369;
+  --green-color: #EF5A6F;
   --light-color: #F7F9F2;
   --dark-color: #191919;
   --gray-color: #a7a9b1;
-  --shadow-first: rgba(34, 40, 49, .15) 1.95px 1.95px 2.6px;
+  --shadow-first: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   --shadow-second: rgba(34, 40, 49, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  --font-xsm: 1.2rem;
   --font-sm: 1.4rem;
   --font-m: 1.6rem;
   --font-lg: 1.8rem;
   --font-xl: 2.0rem;
   --font-xxl: 2.4rem;
+}
+
+p{
+  line-height: 2.2rem;
+  letter-spacing: .05rem;
 }
 
 a {
@@ -44,6 +54,10 @@ li {
 
 svg {
   width: 1.2rem;
+}
+
+.header-title {
+  margin: 3rem 0 2rem 0;
 }
 
 .container {
