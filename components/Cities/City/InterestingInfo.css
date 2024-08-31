@@ -1,0 +1,26 @@
+.interesting-info {
+    margin-bottom: 6rem;
+    .facts {
+        display: flex;
+        gap: 2rem;
+
+        .fact {
+            flex: 1;
+            background-color: var(--light-color);
+            color: var(--dark-color);
+            border-radius: .7rem;
+
+            .fact-card {
+                padding: 2rem;
+                border-radius: .7rem;
+                box-shadow: var(--shadow-first);
+
+                .description {
+                    font-size: var(--font-sm);
+                }
+            }
+
+        }
+
+    }
+}

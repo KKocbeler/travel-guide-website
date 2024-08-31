@@ -1,0 +1,30 @@
+.local-cuisine {
+    margin-bottom: 5rem;
+    .food-list {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1.5rem;
+
+        .food {
+            position: relative;
+            background-color: pink;
+            border-radius: .7rem;
+            box-shadow: var(--shadow-first);
+
+            .title {
+                position: absolute;
+                top: .5rem;
+                left: .5rem;
+                color: var(--light-color);
+            }
+
+            .image {
+                img {
+                    display: block;
+                    width: 100%;
+                    border-radius: .7rem;
+                }
+            }
+        }
+    }
+}

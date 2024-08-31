@@ -1,0 +1,28 @@
+.legends {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 2rem 4rem;
+    border-radius: .7rem;
+    .myth {
+        .title {
+            text-align: center;
+            font-size: var(--font-xxl);
+            margin-bottom: 1rem;
+        }
+
+        .story {
+            display: -webkit-box;
+            -webkit-line-clamp: 12;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            span {
+                font-size: 3rem;
+            }
+        }
+
+        .story.show {
+            -webkit-line-clamp: 99;
+        }
+    }
+
+}

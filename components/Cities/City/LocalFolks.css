@@ -1,0 +1,70 @@
+.local-folks {
+    margin-bottom: 5rem;
+    
+    .interviews {
+        display: grid;
+        gap: 1.5rem;
+        .interview {
+            background-color: var(--green-color);
+            color: var(--light-color);
+            padding: 2rem;
+            border-radius: .7rem;
+            font-size: var(--font-sm);
+            box-shadow: var(--shadow-first);
+            transition: box-shadow .3s;
+
+            .header {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                margin-bottom: 1rem;
+                .avatar {
+                    width: 3.5rem;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 99rem;
+                    }
+                }
+
+                .name {
+                    font-size: var(--font-m);
+                }
+            }
+        }
+
+        .interview:hover {
+            box-shadow: var(--shadow-second);
+        }
+
+        .grid-span-col-2 {
+            background-color: var(--light-color);
+            color: var(--dark-color);
+        }
+
+        .grid-span-row-2 {
+            background-color: var(--primary-color);
+            color: var(--light-color);
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .local-folks {
+        .interviews {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: repeat(4, 1fr);
+
+            .grid-span-col-2 {
+                grid-column: span 2;
+            }
+    
+            .grid-span-row-2 {
+                grid-row: span 2;
+            }
+        }
+    }
+    
+}
