@@ -3,8 +3,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 3rem 4rem;
-    background-color: var(--third-color);
-    box-shadow: var(--shadow-first);
+    background-color: var(--primary-color);
+    color: var(--light-color);
 }
 
 .nav-logo {

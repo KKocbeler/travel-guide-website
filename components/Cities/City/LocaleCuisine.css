@@ -2,27 +2,36 @@
     margin-bottom: 5rem;
     .food-list {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 1.5rem;
 
         .food {
-            position: relative;
-            background-color: pink;
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+            background-color: var(--light-color);
             border-radius: .7rem;
             box-shadow: var(--shadow-first);
-
-            .title {
-                position: absolute;
-                top: .5rem;
-                left: .5rem;
-                color: var(--light-color);
-            }
 
             .image {
                 img {
                     display: block;
                     width: 100%;
+                    min-height: 14rem;
                     border-radius: .7rem;
+                    object-fit: cover;
+                }
+            }
+
+            .body {
+                padding: 1rem;
+
+                .title {
+                    color: var(--primary-color);
+                    margin-bottom: .5rem;
+                }
+
+                .desc {
+                    font-size: var(--font-sm);
                 }
             }
         }
