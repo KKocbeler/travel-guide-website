@@ -1,4 +1,3 @@
-import React from 'react';
 import '@/components/Cities/CitiesList.css';
 import Link from 'next/link';
 
@@ -6,47 +5,91 @@ const CitiesList = () => {
   return (
     <div className='cities'>
         <div className="title">Cities</div>
-        <div className="list">
-            <Link href={'^3'}>
-                <div className="item">
-                    <div className="content">
-                        <h3>Paris</h3>
-                        <p>
-                            Paris, the City of Light, is known for the Eiffel Tower, Louvre, art, fashion, and charming streets, blending elegance with history.
-                        </p>
+        <div className="city-list">
+            <div className="city-card">
+                <div className="city-card-body">
+                    <div className="card-img">
+                        <Link href={'/cities/city'}>
+                            <img src="https://www.bilimevi.com/images/dosyalar/400px-Tour_eiffel_at_sunrise_from_the_trocadero.jpg" alt="" />
+                        </Link>
                     </div>
                 </div>
-            </Link>
-            <Link href={'^3'}>
-                <div className="item">
-                    <div className="content">
-                        <h3>Paris</h3>
-                        <p>
-                            Paris, the City of Light, is known for the Eiffel Tower, Louvre, art, fashion, and charming streets, blending elegance with history.
-                        </p>
+                <div className="city-name">
+                    <Link href={'s'}>Paris</Link>
+                </div>
+            </div>
+            <div className="city-card">
+                <div className="city-card-body">
+                    <div className="card-img">
+                        <Link href={'/cities/city'}>
+                            <img src="https://www.bilimevi.com/images/dosyalar/400px-Tour_eiffel_at_sunrise_from_the_trocadero.jpg" alt="" />
+                        </Link>
                     </div>
                 </div>
-            </Link>
-            <Link href={'^3'}>
-                <div className="item">
-                    <div className="content">
-                        <h3>Paris</h3>
-                        <p>
-                            Paris, the City of Light, is known for the Eiffel Tower, Louvre, art, fashion, and charming streets, blending elegance with history.
-                        </p>
+                <div className="city-name">
+                    <Link href={'s'}>Paris</Link>
+                </div>
+            </div>
+            <div className="city-card">
+                <div className="city-card-body">
+                    <div className="card-img">
+                        <Link href={'/cities/city'}>
+                            <img src="https://www.bilimevi.com/images/dosyalar/400px-Tour_eiffel_at_sunrise_from_the_trocadero.jpg" alt="" />
+                        </Link>
                     </div>
                 </div>
-            </Link>
-            <Link href={'^3'}>
-                <div className="item">
-                    <div className="content">
-                        <h3>Paris</h3>
-                        <p>
-                            Paris, the City of Light, is known for the Eiffel Tower, Louvre, art, fashion, and charming streets, blending elegance with history.
-                        </p>
+                <div className="city-name">
+                    <Link href={'s'}>Paris</Link>
+                </div>
+            </div>
+            <div className="city-card">
+                <div className="city-card-body">
+                    <div className="card-img">
+                        <Link href={'/cities/city'}>
+                            <img src="https://www.bilimevi.com/images/dosyalar/400px-Tour_eiffel_at_sunrise_from_the_trocadero.jpg" alt="" />
+                        </Link>
                     </div>
                 </div>
-            </Link>
+                <div className="city-name">
+                    <Link href={'s'}>Paris</Link>
+                </div>
+            </div>
+            <div className="city-card">
+                <div className="city-card-body">
+                    <div className="card-img">
+                        <Link href={'/cities/city'}>
+                            <img src="https://www.bilimevi.com/images/dosyalar/400px-Tour_eiffel_at_sunrise_from_the_trocadero.jpg" alt="" />
+                        </Link>
+                    </div>
+                </div>
+                <div className="city-name">
+                    <Link href={'s'}>Paris</Link>
+                </div>
+            </div>
+            <div className="city-card">
+                <div className="city-card-body">
+                    <div className="card-img">
+                        <Link href={'/cities/city'}>
+                            <img src="https://www.bilimevi.com/images/dosyalar/400px-Tour_eiffel_at_sunrise_from_the_trocadero.jpg" alt="" />
+                        </Link>
+                    </div>
+                </div>
+                <div className="city-name">
+                    <Link href={'s'}>Paris</Link>
+                </div>
+            </div>
+            <div className="city-card">
+                <div className="city-card-body">
+                    <div className="card-img">
+                        <Link href={'/cities/city'}>
+                            <img src="https://www.bilimevi.com/images/dosyalar/400px-Tour_eiffel_at_sunrise_from_the_trocadero.jpg" alt="" />
+                        </Link>
+                    </div>
+                </div>
+                <div className="city-name">
+                    <Link href={'s'}>Paris</Link>
+                </div>
+            </div>
         </div>
     </div>
   )

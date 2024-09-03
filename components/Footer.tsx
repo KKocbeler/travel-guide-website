@@ -8,6 +8,7 @@ import Link from 'next/link';
 import { faFacebook, faInstagram, faLinkedin, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
+
     interface fList {
         title: string,
         list: string[],
@@ -23,7 +24,9 @@ const Footer = () => {
     const [openLists, setOpenLists] = useState<boolean[]>(new Array(footerList.length).fill(false));
 
     const toggleList = (index: number) => {
-        setOpenLists(openLists.map((isOpen, i) => i === index ? !isOpen : isOpen));
+        if (window.innerWidth < 768) {
+            setOpenLists(openLists.map((isOpen, i) => i === index ? !isOpen : isOpen));
+        }
     }
 
   return (

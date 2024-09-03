@@ -5,26 +5,33 @@ nav {
     padding: 3rem 4rem;
     background-color: var(--primary-color);
     color: var(--light-color);
+
+    .nav-logo {
+        font-size: 2.4rem;
+        font-weight: bold;
+    }
+    
+    .nav-menu-list {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+
+        a  {
+            color: var(--light-color);
+            .login-button {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
+            
+            .login-button svg {
+                width: 1.3rem;
+            }
+        }
+    }
+    
+
 }
 
-.nav-logo {
-    font-size: 2.4rem;
-    font-weight: bold;
-}
 
-.nav-menu-list {
-    display: flex;
-    align-items: center;
-    gap: 4rem;
-}
-
-.login-button {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.login-button svg {
-    width: 1.3rem;
-}
 
