@@ -12,7 +12,7 @@
             }
 
             > p {
-                font-size: var(--font-xxl);
+                font-size: var(--font-xl);
                 margin-bottom: 1rem;
             }
 
@@ -82,7 +82,7 @@
                 border: .1rem solid var(--gray-color);
                 padding: 2rem;
                 border-radius: .7rem;
-                transition: background-color .3s ease-in;
+                transition: background-color .2s ease-in;
                 font-size: var(--font-md);
             }
 
@@ -130,7 +130,8 @@
         }
 
         > div:hover {
-            background-color: var(--gray-color);
+            background-color: var(--dark-color);
+            color: var(--light-color);
         }
     }
 
