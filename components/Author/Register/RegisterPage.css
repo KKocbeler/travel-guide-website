@@ -1,0 +1,162 @@
+.register-page {
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0 10rem;
+    .sign-in {
+        min-width: 55rem;
+        padding: 4rem 5rem;
+        border-radius: .7rem;
+        box-shadow: var(--shadow-first);
+
+        .title {
+            text-align: center;
+            font-size: var(--font-xxl);
+            font-weight: bold;
+        }
+
+        .register-form {
+            margin: 2rem 0;
+
+            .input-box {
+                position: relative;
+                width: 100%;
+
+                input {
+                    width: 100%;
+                    padding: 0 2rem 1rem 0rem;
+                    border: none;
+                    border-bottom: .1rem solid var(--primary-color);
+                    margin: 1.5rem 0;
+                    outline: none;
+                    background-color: transparent;
+                }
+
+                svg {
+                    position: absolute;
+                    top: 1.3rem;
+                    right: 0rem;
+                    width: 2rem;
+                }
+
+                label {
+                    position: absolute;
+                    top: 1.3rem;
+                    left: 0;
+                    transition: all .3s;
+                    pointer-events: none;
+                }
+
+                input:focus~label,
+                input:valid~label {
+                    top: -.5rem;
+                    font-size: var(--font-sm);
+                }
+            }
+
+            .policy {
+                display: flex;
+                gap: .5rem;
+                align-items: center;
+
+                a {
+                    font-size: var(--font-sm);
+                    color: var(--secondary-color);
+                }
+            }
+
+            .button {
+                text-align: center;
+                width: 100%;
+                padding: 1.5rem;
+                background-color: var(--primary-color);
+                color: var(--light-color);
+                margin: 2rem 0 1rem 0;
+                border-radius: .7rem;
+                transition: all .3s;
+            }
+
+            .button:hover {
+                cursor: pointer;
+                opacity: .9;
+            } 
+        }
+
+        .social-register {
+            margin-top: 5rem;
+
+            .or {
+                text-align: center;
+                margin-bottom: 2rem;
+            
+                span {
+                    position: relative;
+                    padding: 0 2rem;
+                }
+            
+                span::before,
+                span::after {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 12rem;
+                    height: .1rem; 
+                    background-color: var(--gray-color);
+                }
+            
+                span::before {
+                    left: -12rem;
+                }
+                
+                span::after {
+                    right: -12rem;
+                }
+            }
+
+
+            .social-title {
+                text-align: center;
+            }
+
+            .social-links {
+                display: grid;
+                gap: 1rem;
+                margin: 2rem;
+
+                .social-box {
+                    border-radius: .7rem;
+                    padding: 1rem 2rem;
+                    a {
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+                        color: var(--light-color);
+                        svg {
+                            color: var(--light-color);
+                            border-radius: 99rem;
+                            width: 2rem;
+                            height: 2rem;
+                            cursor: pointer;
+                        }
+                    }
+
+                }
+
+                .fa {
+                    background-color: #5774A7;
+                }
+
+                .x {
+                    background-color: #000000;
+                }
+
+                .insta {
+                    background-color: #DB3FB0;
+                }
+
+
+            }
+        } 
+
+    }
+}

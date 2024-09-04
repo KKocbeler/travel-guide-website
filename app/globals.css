@@ -20,10 +20,10 @@ body {
 }
 
 :root {
-  --primary-color: #A64558;
-  --secondary-color: #EACACB;
-  --third-color: #788260;
-  --forth-color: #ECD6A7;
+  --primary-color: #1D242B;
+  --secondary-color: #0077C0;
+  --third-color: #C7EEFF;
+  --forth-color: #FAFAFA;
   --green-color: #52513F;
   --light-color: #F7F9F2;
   --dark-color: #191919;
