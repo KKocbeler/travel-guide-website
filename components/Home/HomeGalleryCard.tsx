@@ -1,6 +1,5 @@
 import React from 'react';
 import '@/components/Home/HomeGalleryCard.css';
-import Image from 'next/image';
 import Link from 'next/link';
 
 const HomeGalleryCard = () => {
@@ -9,7 +8,7 @@ const HomeGalleryCard = () => {
         <Link href={'#'}>
             <div className="gallery-card">
                 <div className="gallery-img">
-                    <Image src={'/img/home/moskova.jpg'} width={150} height={120} alt='gallery-img'/>
+                    <img src="/img/home/moskova.jpg" alt="" />
                 </div>
                 <div className="gallery-body">
                     <h3>Outdoors in the Bay & Beyond</h3>

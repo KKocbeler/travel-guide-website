@@ -1,23 +1,21 @@
 .home-offer {
     margin-top: 4rem;
+  
+    h3 {
+      font-size: var(--font-xl);
+      margin-bottom: 1rem;
+    }
+  
+    > p {
+      font-size: var(--font-lg);
+      margin-bottom: 1rem;
+    }
 }
-
-.home-offer h3 {
-    font-size: var(--font-xl);
-    margin-bottom: 1rem;
-}
-
-.home-offer > p {
-    font-size: var(--font-xl);
-    margin-bottom: 1rem;
-}
-
+  
 .offer-card {
     position: relative;
-    background: 
-        linear-gradient(to bottom, rgba(25, 25, 25, 0.2), rgba(25, 25, 25, 0.3)),
-        url('/img/home/offer-img.jpeg')
-    ;
+    background: linear-gradient(to bottom, rgba(25, 25, 25, 0.2), rgba(25, 25, 25, 0.3)),
+      url('/img/home/offer-img.jpeg');
     background-position: top;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -25,40 +23,38 @@
     border-radius: 1rem;
     color: var(--light-color);
     box-shadow: var(--shadow-second);
-}
-
-.home-offer .card-body {
-    position: absolute;
-    top: 50%;
-    left: 4rem;
-    transform: translateY(-55%);
-}
-
-.offer-card h4 {
-    font-size:  var(--font-xxl);
-    margin-bottom: 1rem;
-}
-
-.offer-card p {
-    font-size: var(--font-lg);
-    margin-bottom: 3rem;
-}
-
-.offer-card a {
-    padding: 1.2rem 2rem;
-    background-color: var(--light-color);
-    border-radius: .5rem;
-    box-shadow: var(--shadow-first);
-    transition: all .2s;
-}
-
-.offer-card a:hover {
-    background-color: var(--primary-color);
-    color: var(--light-color);
-}
-
-@media (min-width: 768px) {
-    .offer-card {
-        height: 19vh;
+  
+    .card-body {
+      position: absolute;
+      top: 50%;
+      left: 4rem;
+      transform: translateY(-55%);
+    }
+  
+    h4 {
+      font-size: var(--font-xl);
+      margin-bottom: 1rem;
+    }
+  
+    p {
+      margin-bottom: 3rem;
+    }
+  
+    a {
+      padding: 1.2rem 2rem;
+      background-color: var(--light-color);
+      border-radius: 0.5rem;
+      box-shadow: var(--shadow-first);
+      transition: all 0.2s;
+  
+      &:hover {
+        background-color: var(--primary-color);
+        color: var(--light-color);
+      }
+    }
+  
+    @media (min-width: 768px) {
+      height: 19vh;
     }
 }
+  

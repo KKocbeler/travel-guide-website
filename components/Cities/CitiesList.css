@@ -17,10 +17,17 @@
 
                 .card-img {
                     position: relative;
+                    overflow: hidden;
+                    border-radius: .7rem;
                     img {
                         width: 100%;
-                        max-height: 42rem;
+                        height: 22rem;
                         border-radius: .7rem;
+                        transition: transform .3s;
+                    }
+
+                    img:hover {
+                        transform: scale(1.1);
                     }
                 }
 

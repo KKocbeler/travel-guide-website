@@ -9,7 +9,7 @@
 }
 
 html {
-  font-size: 62.5%
+  font-size: 43%;
 }
 
 body {
@@ -62,49 +62,50 @@ svg {
 }
 
 .container {
-  padding: 0 15%;
+  padding: 0 2%;
 }
 
-/* SCROLLBAR */
-
-/* RESPONSIVE */
-
-@media (max-width: 1199px) {
-  html {
-    font-size: 56.25%
-}
-
-  .container {
-    padding: 0 12%;
-  }
-}
-
-@media (max-width: 991px) {
-  html {
-    font-size: 50%;
-  }
-
-  .container {
-    padding: 0 8%;
-  }
-}
-
-@media (max-width: 767px) {
+@media (min-width: 576px) {
   html {
     font-size: 45%;
-  } 
+  }
 
   .container {
     padding: 0 4%;
   }
 }
 
-@media (max-width: 575px) {
+@media (min-width: 768px) {
   html {
-    font-size: 43%
+    font-size: 50%;
+  } 
+
+  .container {
+    padding: 0 8%;
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 56.25%;
   }
 
   .container {
-    padding: 0 2%;
+    padding: 0 12%;
   }
 }
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .container {
+    padding: 0 15%;
+  }
+}
+
+
+
+
+

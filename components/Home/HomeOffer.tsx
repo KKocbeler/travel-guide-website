@@ -6,7 +6,6 @@ const HomeOffer = () => {
   return (
     <div className='home-offer container'>
         <h3>Offer</h3>
-        <p>Promotions, deals and special for you</p>
         <div className="offer-card">
             <div className="card-body">
                 <h4>Seize the moment</h4>

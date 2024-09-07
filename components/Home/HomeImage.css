@@ -4,6 +4,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 20vh;
+    box-shadow: var(--shadow-first);
 }
 
 .home-image .searchbar {
@@ -26,7 +27,7 @@
     border: none;
     border-radius: 99rem;
     outline: none;
-    font-size: var(--font-xl);
+    font-size: var(--font-lg);
 }
 
 .searchbar .form svg {
@@ -46,7 +47,7 @@
 .searchbar .picked-cities li a{
     padding: 1.5rem 3rem;
     text-align: center;
-    background-color: var(--third-color);
+    background-color: var(--forth-color);
     color: var(--primary-color);
     border-radius: 99rem;
     box-shadow: var(--shadow-first);

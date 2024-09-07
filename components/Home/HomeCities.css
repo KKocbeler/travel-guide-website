@@ -38,13 +38,12 @@
     min-width: calc(25% - 1.6rem);
     overflow: hidden;
     border-radius: .5rem;
-    box-shadow: var(--shadow-first);
 }
 
 .home-cities .card img {
     display: block;
     width: 100%;
-    height: auto;
+    min-height: 30rem;
     object-fit: cover;
     transition: transform .3s;
     border-radius: .5rem;
@@ -61,7 +60,7 @@
     left: .0rem;
     padding: 5rem 0 1rem 1rem;
     background: var(--light-color);
-    background: linear-gradient(0deg, rgb(71, 76, 83) 5%, transparent 100%);
+    background: linear-gradient(0deg, rgb(29, 36, 43) 5%, transparent 100%);
     font-size: var(--font-lg);
     color: var(--light-color);
 }
