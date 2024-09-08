@@ -60,7 +60,10 @@
 
 @media (min-width: 768px) {
     .festivals {
+<<<<<<< HEAD
         margin-bottom: 5rem;
+=======
+>>>>>>> 85274b96416437c26fa18bb182d7fd28bb4052e3
         .fest-list {
             grid-template-columns: 1fr 1fr;
         }

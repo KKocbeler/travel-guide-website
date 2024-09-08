@@ -2,39 +2,50 @@
     margin-bottom: 5rem;
     .food-list {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr;
         gap: 1.5rem;
 
         .food {
             display: grid;
             grid-template-columns: 2fr 3fr;
-            background-color: var(--light-color);
+            height: 15rem;
+            background-color: var(--forth-color);
             border-radius: .7rem;
             box-shadow: var(--shadow-first);
+            color: var(--light-color);
 
             .image {
+                height: 15rem;
                 img {
                     display: block;
                     width: 100%;
                     height: 100%;
-                    min-height: 14rem;
                     border-radius: .7rem;
                     object-fit: cover;
                 }
             }
 
             .body {
-                padding: 1rem;
+                padding: 1.5rem 2rem 2rem 1rem;
 
                 .title {
-                    color: var(--primary-color);
-                    margin-bottom: .5rem;
+                    margin-bottom: .8rem;
+                    font-weight: bold;
+
                 }
 
                 .desc {
                     font-size: var(--font-sm);
                 }
             }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .local-cuisine {
+        .food-list {
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 }
