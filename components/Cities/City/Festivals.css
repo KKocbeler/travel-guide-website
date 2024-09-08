@@ -2,7 +2,7 @@
     margin-bottom: 5rem;
     .fest-list {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(calc(50% - 2rem), 1fr));
+        grid-template-columns: 1fr;
         row-gap: 3rem;
         column-gap: 2rem;
 
@@ -54,6 +54,14 @@
                 right: 1rem;
                 font-size: var(--font-xsm);
             }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .festivals {
+        .fest-list {
+            grid-template-columns: 1fr 1fr;
         }
     }
 }
