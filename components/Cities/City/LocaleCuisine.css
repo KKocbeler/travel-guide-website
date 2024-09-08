@@ -3,16 +3,16 @@
     .food-list {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: 2rem;
 
         .food {
             display: grid;
             grid-template-columns: 2fr 3fr;
             height: 15rem;
-            background-color: var(--forth-color);
             border-radius: .7rem;
+            background-color: var(--light-color);
             box-shadow: var(--shadow-first);
-            color: var(--light-color);
+            color: var(--primary-color);
 
             .image {
                 height: 15rem;
@@ -20,13 +20,14 @@
                     display: block;
                     width: 100%;
                     height: 100%;
-                    border-radius: .7rem;
+                    border-top-left-radius: .7rem;
+                    border-bottom-left-radius: .7rem;
                     object-fit: cover;
                 }
             }
 
             .body {
-                border: 1rem solid var(--forth-color);
+                border-radius: .7rem;
                 padding: 1.5rem 2rem 2rem 1rem;
 
                 .title {

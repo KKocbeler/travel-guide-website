@@ -1,11 +1,10 @@
 .place-to-go {
     .places {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         gap: 2rem;
 
         .place {
-            
             box-shadow: var(--shadow-first);
             border-radius: .7rem;
 
@@ -46,5 +45,13 @@
 
         } 
         
+    }
+}
+
+@media (min-width: 768px) {
+    .place-to-go {
+        .places {
+            grid-template-columns: 1fr 1fr;
+        }
     }
 }

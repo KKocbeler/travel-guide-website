@@ -1,6 +1,6 @@
 footer {
     margin-top: auto;
-    background-color: var(--primary-color);
+    background-color: var(--dark-color);
     color: var(--light-color);
 
     .footer-main {

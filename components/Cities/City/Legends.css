@@ -1,6 +1,7 @@
 .legends {
-    background-color: var(--primary-color);
+    background-color: var(--forth-color);
     color: var(--light-color);
+    box-shadow: var(--shadow-first);
     padding: 2rem 4rem;
     border-radius: .7rem;
     .myth {

@@ -12,18 +12,29 @@
             border-radius: .7rem;
 
             .fact-card {
+                position: relative;
                 padding: 2rem;
                 border-radius: .7rem;
                 box-shadow: var(--shadow-first);
-                min-height: 20rem;
+                min-height: 10rem;
                 
 
                 .title {
                     margin-bottom: 1rem;
+                    font-weight: bold;
                 }
 
                 .description {
                     font-size: var(--font-sm);
+                }
+
+                svg {
+                    position: absolute;
+                    top: 0;
+                    right: -.2rem;
+                    color: var(--primary-color);
+                    width: 2rem;
+                    height: 2rem;
                 }
 
             }
