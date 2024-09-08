@@ -14,7 +14,7 @@ const LocalFolks:React.FC<LocalFolksProps> = ({city}) => {
     return (
         <div className="local-folks">
             <div className="header-title">
-                Voices of the Locals: Insider Tips and Stories
+                Voices of the Locals
             </div>
             <div className="interviews">
                 {
