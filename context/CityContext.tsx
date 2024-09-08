@@ -40,7 +40,7 @@ const CityProvider = ({ children }: CityProviderProps) => {
     }, []);
     
     return (
-        <CityContext.Provider value={{ cities: cities, loading: loading, error: error }}>
+        <CityContext.Provider value={{ cities, loading, error }}>
             {children}
         </CityContext.Provider>
     );
