@@ -15,7 +15,7 @@ const HomeCities = () => {
     return (
         <div className='home-cities container'>
             <div className="card-header">
-                <h3>Cities</h3>
+                <h2 className='header-title'>Cities</h2>
                 <div className="slider-button">
                     <FontAwesomeIcon icon={faChevronLeft} />
                     <FontAwesomeIcon icon={faChevronRight} />
@@ -23,16 +23,17 @@ const HomeCities = () => {
             </div>
             <div className="card-list">
                 {
-                    cities?.map((city:City, index: string) => (
+                    cities?.map((city:City, index: number) => (
                         <div className="card" key={index}>
-                            <Link href={`/cities/${city.name}`}>
                                 <div className="card-img">
-                                    <img src={city.img} alt={city.name} />
+                                    <Link href={`/cities/${city.name}`}>
+                                        <img src={city.img} alt={city.name} />
+                                    </Link>
                                 </div>
                                 <div className="card-body">
                                     {city.name}
                                 </div>
-                            </Link>
+                            
                         </div>
                     ))
                 }

@@ -1,41 +1,53 @@
 import React from 'react';
 import '@/components/Home/HomeFeatures.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendarAlt, faCircleCheck, faGem, faMapSigns, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faCalendarAlt, faGem, faMapSigns, faSearch, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 
-const HomeFeatures = () => {
+interface FeaturesProps {
+    icon: IconDefinition,
+    title: string,
+    article: string,
+}
+
+const HomeFeatures:React.FC<FeaturesProps> = () => {
+
+    const features: FeaturesProps[] = [
+        {
+            icon: faMapSigns, 
+            title: 'Discover Iconic Cities', 
+            article: 'Explore the history and culture of Europe\'s most famous cities, from Rome\'s ancient ruins to Paris\' charming streets.'
+        },
+        {
+            icon: faCalendarAlt, 
+            title: 'Festivals & Events', 
+            article: 'Stay updated on local festivals and events, from Oktoberfest in Munich to the Venice Carnival, and enjoy Europe\'s vibrant cultural scene.'
+        },
+        {
+            icon: faGem, 
+            title: 'Local Cuisine Highlights', 
+            article: 'Experience Europe\'s culinary delights, from Italian pasta to French pastries, and discover must-try local dishes.'
+        },
+        {
+            icon: faSearch, 
+            title: 'Insider Travel Tips', 
+            article: 'Get tips on the best places to visit, when to go, and how to experience cities like a local. Find hidden gems and avoid tourist traps.'
+        }
+    ]
   return (
     <div className='home-features container'>
         <h3>OdysseyJourneys Features</h3>
         <div className="features-section">
-            <div className="section">
-                <div className="section-icon">
-                    <FontAwesomeIcon icon={faGem} />
-                </div>
-                <h4>Big Names, Great Deals</h4>
-                <p>Get information about the most famous historical sites and discover amazing travel deals.</p>
-            </div>
-            <div className="section">
-                <div className="section-icon">
-                        <FontAwesomeIcon icon={faMapSigns} />
-                </div>
-                <h4>Comprehensive Guidance</h4>
-                <p>Provides detailed guidance for each historical site, including places to visit, local events, and visitor tips.</p>
-            </div>
-            <div className="section">
-                <div className="section-icon">
-                        <FontAwesomeIcon icon={faSearch} />
-                </div>
-                <h4>Search with Peace of Mind</h4>
-                <p>Your searches on our site will not affect the prices you see. We always offer transparent and fair prices.</p>
-            </div>
-            <div className="section">
-                <div className="section-icon">
-                        <FontAwesomeIcon icon={faCalendarAlt} />
-                </div>
-                <h4>Flexible Booking</h4>
-                <p>Easily find tours and hotels with flexible booking options, giving you the freedom to change your plans.</p>
-            </div>
+            {
+                features.map((item, index: number) => (
+                    <div className="section" key={index}>
+                        <div className="section-icon">
+                            <FontAwesomeIcon icon={item.icon} />
+                        </div>
+                        <h4>{item.title}</h4>
+                        <p>{item.article}</p>
+                    </div>   
+                ))
+            }
         </div>
     </div>
   )
