@@ -80,7 +80,7 @@
             .sign-up {
                 a {
                     font-size: var(--font-sm);
-                    color: var(--secondary-color);
+                    color: var(--primary-color);
                     text-decoration: underline;
                 }
             }

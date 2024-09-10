@@ -61,6 +61,7 @@
                 a {
                     font-size: var(--font-sm);
                     color: var(--secondary-color);
+                    text-decoration: underline;
                 }
             }
 
