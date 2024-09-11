@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+.gallery-page {
+    margin: 4rem 0;
+
+    .title {
+        font-size: 5rem;
+        margin-bottom: 3rem;
+        text-align: center;
+        font-family: "Sacramento", cursive;
+    }
+
+    .gallery-images-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+        gap: 1.5rem;
+    
+        .gallery-image {
+
+            img {
+                width: 100%;
+                height: 100%;
+                transition: all .3s;
+                object-fit: cover;
+                border-radius: .7rem;
+            }
+        }
+    }
+
+    .more-button {
+        margin: 4rem auto;
+        text-align: center;
+        padding: 2rem 4rem;
+        background-color: var(--dark-color);
+        color: var(--light-color);
+        border-radius: .7rem;
+        max-width: 20rem;
+    }
+
+    .more-button.closed {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .gallery-page {
+        .gallery-images-list { 
+            .gallery-image {
+                img:hover {
+                    transform: scale(1.1);
+                }
+            }    
+        }
+    }
+}
