@@ -34,7 +34,7 @@ return (
             {
                 selectedCity?.map((city, index) => (
                     <div className={`city ${index < 2 ? 'grid-span-3' : 'grid-span-2'}`} key={index}>
-                        <Link href={'#'}>
+                        <Link href={`/cities/${city.name}`}>
                             <img src={city.img} alt={city.name}/>
                             <div className='city-name'>
                                 {city.name}

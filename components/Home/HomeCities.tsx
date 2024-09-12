@@ -1,5 +1,5 @@
 "use client"
-import React, { useContext } from 'react';
+import React, { useContext, useRef, useState } from 'react';
 import '@/components/Home/HomeCities.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
@@ -9,6 +9,30 @@ import Link from 'next/link';
 
 const HomeCities = () => {
     const {cities, loading, error} = useContext(CityContext);
+    const cardListRef = useRef<HTMLDivElement>(null);
+
+    console.log(cardListRef);
+
+    const scrollLeft = () => {
+        if(cardListRef.current) {
+            if(window.innerWidth >= 768) {
+                cardListRef.current.scrollBy({ left: -800, behavior: 'smooth'})
+            } else {
+                cardListRef.current.scrollBy({ left: -420, behavior: 'smooth'})
+            }
+            
+        } 
+    }
+
+    const scrollRight = () =>{
+        if(cardListRef.current) {
+            if(window.innerWidth >= 768) {
+                cardListRef.current.scrollBy({ left: 800, behavior: 'smooth'})
+            } else {
+                cardListRef.current.scrollBy({ left: 420, behavior: 'smooth'})
+            }
+        }
+    }
 
     console.log(cities)
 
@@ -17,11 +41,11 @@ const HomeCities = () => {
             <div className="card-header">
                 <h2 className='header-title'>Cities</h2>
                 <div className="slider-button">
-                    <FontAwesomeIcon icon={faChevronLeft} />
-                    <FontAwesomeIcon icon={faChevronRight} />
+                    <FontAwesomeIcon icon={faChevronLeft} onClick={scrollLeft}/>
+                    <FontAwesomeIcon icon={faChevronRight} onClick={scrollRight}/>
                 </div>
             </div>
-            <div className="card-list">
+            <div className="card-list" ref={cardListRef}>
                 {
                     cities?.map((city:City, index: number) => (
                         <div className="card" key={index}>
