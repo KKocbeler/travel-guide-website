@@ -49,8 +49,8 @@ const GalleryPage = () => {
             ) : (
                 <>
                     <div className="gallery-images-list">
-                        {visibleImages?.map((item, index) => (
-                            <div className="gallery-image" key={index}>
+                        {visibleImages?.map((item, index:number) => (
+                            <div className={`gallery-image ${(index % 6 === 0) ? 'grid-col-span-2' : (index % 3 === 0) ? 'grid-row-span-2' : ''}`} key={index}>
                                 <img src={item} alt={`Gallery image ${index}`} />
                             </div>
                         ))}

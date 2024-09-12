@@ -12,11 +12,12 @@
 
     .gallery-images-list {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+        grid-template-columns: repeat(4, 1fr);
         gap: 1.5rem;
+        grid-auto-flow: dense;
     
         .gallery-image {
-
+            overflow: hidden;
             img {
                 width: 100%;
                 height: 100%;
@@ -25,6 +26,16 @@
                 border-radius: .7rem;
             }
         }
+
+        .grid-col-span-2 {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        .grid-row-span-2 {
+            grid-row: span 2;
+        }
+
     }
 
     .more-button {
@@ -44,7 +55,7 @@
 
 @media (min-width: 768px) {
     .gallery-page {
-        .gallery-images-list { 
+        .gallery-images-list {
             .gallery-image {
                 img:hover {
                     transform: scale(1.1);
