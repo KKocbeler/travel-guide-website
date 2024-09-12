@@ -6,7 +6,6 @@
         min-width: 55rem;
         padding: 4rem 5rem;
         border-radius: .7rem;
-        box-shadow: var(--shadow-first);
 
         .title {
             text-align: center;
@@ -159,5 +158,13 @@
             }
         } 
 
+    }
+}
+
+@media (min-width: 768px) {
+    .register-page {
+        .sign-in {
+            box-shadow: var(--shadow-first);
+        }
     }
 }

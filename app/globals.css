@@ -62,7 +62,7 @@ svg {
 }
 
 .container {
-  padding: 0 2%;
+  padding: 0 1%;
 }
 
 @media (min-width: 576px) {
@@ -71,7 +71,7 @@ svg {
   }
 
   .container {
-    padding: 0 4%;
+    padding: 0 3%;
   }
 }
 
@@ -81,7 +81,7 @@ svg {
   } 
 
   .container {
-    padding: 0 7%;
+    padding: 0 5%;
   }
 }
 
@@ -91,7 +91,7 @@ svg {
   }
 
   .container {
-    padding: 0 10%;
+    padding: 0 8%;
   }
 }
 
