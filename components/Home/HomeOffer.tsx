@@ -1,5 +1,5 @@
 import React from 'react';
-import '@/components/Home/HomeOffer.css';
+import '@/components/Home/HomeOffer.scss';
 import Link from 'next/link';
 
 const HomeOffer = () => {

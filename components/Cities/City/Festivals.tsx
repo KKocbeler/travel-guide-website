@@ -1,7 +1,7 @@
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react';
-import '@/components/Cities/City/Festivals.css';
+import '@/components/Cities/City/Festivals.scss';
 import { City } from '@/types/CityTypes';
 
 interface FestivalsProps {

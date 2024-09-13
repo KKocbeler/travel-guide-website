@@ -1,9 +1,6 @@
 "use client"
 import React, { useContext, useEffect, useState } from 'react';
-import '@/components/Home/HomePopular.css';
-import Image from 'next/image';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFlag } from '@fortawesome/free-solid-svg-icons';
+import '@/components/Home/HomePopular.scss';
 import Link from 'next/link';
 import { CityContext } from '@/context/CityContext';
 import { City } from '@/types/CityTypes';
@@ -14,16 +11,15 @@ const {cities, loading, error} = useContext(CityContext);
 const [selectedCity, setSelectedCity] = useState<City[]>([])
 
 useEffect(() => {
-    const popularCities = () => {
-        const PickedCities = cities?.filter((city: City) => city.id && city.id % 2 === 0);
-        setSelectedCity(PickedCities)
+    if(cities) {
+        const popularCities = () => {
+            const PickedCities= cities?.filter((city: City) => city.id && city.id % 2 === 0);
+            setSelectedCity(PickedCities)
+        }
+    
+        popularCities();
     }
-
-    popularCities();
 },[cities])
-
-console.log(cities)
-console.log(selectedCity)
 
 return (
     <div className='home-popular container'>

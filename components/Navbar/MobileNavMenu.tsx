@@ -1,5 +1,5 @@
 import React from 'react';
-import '@/components/Navbar/MobileNavMenu.css';
+import '@/components/Navbar/MobileNavMenu.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAddressCard, faCity, faHome, faImages, faXmark, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';

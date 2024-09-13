@@ -1,5 +1,5 @@
 "use client";
-import '@/components/Cities/CitiesList.css';
+import '@/components/Cities/CitiesList.scss';
 import { CityContext } from '@/context/CityContext';
 import { City } from '@/types/CityTypes';
 import Link from 'next/link';

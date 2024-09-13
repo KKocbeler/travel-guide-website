@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-import '@/components/Author/Register/RegisterPage.css';
+import '@/components/Author/Register/RegisterPage.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faEye, faEyeSlash, faUser, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons';

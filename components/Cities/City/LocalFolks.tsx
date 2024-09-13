@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import '@/components/Cities/City/LocalFolks.css';
+import '@/components/Cities/City/LocalFolks.scss';
 import { City } from '@/types/CityTypes';
 
 interface LocalFolksProps {

@@ -1,5 +1,5 @@
 import React from 'react';
-import '@/components/Home/HomeGalleryCard.css';
+import '@/components/Home/HomeGalleryCard.scss';
 import Link from 'next/link';
 
 const HomeGalleryCard = () => {

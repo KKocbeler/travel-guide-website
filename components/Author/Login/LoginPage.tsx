@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-import '@/components/Author/Login/LoginPage.css';
+import '@/components/Author/Login/LoginPage.scss';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons';

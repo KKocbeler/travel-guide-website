@@ -1,5 +1,5 @@
 import React from 'react';
-import '@/components/Cities/City/PlaceToGo.css';
+import '@/components/Cities/City/PlaceToGo.scss';
 import { City } from '@/types/CityTypes';
 
 interface PlaceToGoProps {

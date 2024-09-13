@@ -1,7 +1,7 @@
 "use-client"
 
 import React, { useState } from 'react';
-import '@/components/Footer.css';
+import '@/components/Footer.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';

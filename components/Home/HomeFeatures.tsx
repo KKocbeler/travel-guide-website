@@ -1,5 +1,5 @@
 import React from 'react';
-import '@/components/Home/HomeFeatures.css';
+import '@/components/Home/HomeFeatures.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarAlt, faGem, faMapSigns, faSearch, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 

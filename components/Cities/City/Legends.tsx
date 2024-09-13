@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-import '@/components/Cities/City/Legends.css';
+import '@/components/Cities/City/Legends.scss';
 import { City } from '@/types/CityTypes';
 
 interface LegendsProps {

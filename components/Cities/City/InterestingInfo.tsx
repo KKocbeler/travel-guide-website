@@ -1,5 +1,5 @@
 import React from 'react';
-import '@/components/Cities/City/InterestingInfo.css';
+import '@/components/Cities/City/InterestingInfo.scss';
 import { City } from '@/types/CityTypes';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookmark } from '@fortawesome/free-solid-svg-icons';

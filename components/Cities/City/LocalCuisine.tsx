@@ -1,5 +1,5 @@
 import React from 'react';
-import '@/components/Cities/City/LocaleCuisine.css';
+import '@/components/Cities/City/LocaleCuisine.scss';
 import { City } from '@/types/CityTypes';
 
 interface LocalCuisineProps {

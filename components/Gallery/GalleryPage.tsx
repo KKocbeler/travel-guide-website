@@ -1,6 +1,6 @@
 "use client"
 import React, { useContext, useEffect, useState } from 'react';
-import '@/components/Gallery/GalleryPage.css';
+import '@/components/Gallery/GalleryPage.scss';
 import { CityContext } from '@/context/CityContext';
 import Loading from '../Pieces/Loading';
 

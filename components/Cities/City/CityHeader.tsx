@@ -1,5 +1,5 @@
 import React from 'react';
-import '@/components/Cities/City/CityHeader.css';
+import '@/components/Cities/City/CityHeader.scss';
 import { City } from '@/types/CityTypes';
 
 interface HeaderProps {
