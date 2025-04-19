@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌍 Travel Guide Website
 
-## Getting Started
+**Travel Guide Website** is a modern, responsive web application where users can explore iconic destinations, discover local tips, view highlights, and get inspired for their next trip. Built with Next.js and SCSS for a fast and user-friendly experience.
 
-First, run the development server:
+🔗 Live Demo
+  👉 https://odysseyjourneys.netlify.app
+  
+## 🖼️ Screenshots
+
+![Home Page](public/img/github-img/home-page.png)
+![Gallery](public/img/github-img/gallery.png)
+![City-Page](public/img/github-img/city-page.png)
+
+---
+
+## 🚀 Features
+
+- 🗺️ Explore iconic cities across Europe
+- 📅 Stay informed about local events & festivals
+- 🍽️ Discover local food recommendations
+- 💡 Insider travel tips and guides
+- 📱 Fully responsive for all screen sizes
+- ⚡ Fast and clean UI experience
+- 🧪 Uses local fake data (JSON-based)
+
+---
+
+## 🛠️ Built With
+
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [SCSS](https://sass-lang.com/)
+- [JavaScript (ES6+)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- Fake JSON data (local files for mocking content)
+
+---
+
+## 📦 Getting Started
+
+To run this project locally:
 
 ```bash
+# Clone the repository
+git clone https://github.com/KKocbeler/travel-guide-website.git
+
+# Navigate into the project directory
+cd travel-guide-website
+
+# Install dependencies
+npm install
+
+# Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
