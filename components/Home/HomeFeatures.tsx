@@ -4,9 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarAlt, faGem, faMapSigns, faSearch, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 
 interface FeaturesProps {
-    icon: IconDefinition,
-    title: string,
-    article: string,
+    icon?: IconDefinition,
+    title?: string,
+    article?: string,
 }
 
 const HomeFeatures:React.FC<FeaturesProps> = () => {
@@ -41,7 +41,7 @@ const HomeFeatures:React.FC<FeaturesProps> = () => {
                 features.map((item, index: number) => (
                     <div className="section" key={index}>
                         <div className="section-icon">
-                            <FontAwesomeIcon icon={item.icon} />
+                            { item.icon && <FontAwesomeIcon icon={item?.icon} />}
                         </div>
                         <h4>{item.title}</h4>
                         <p>{item.article}</p>
